@@ -1,0 +1,9 @@
+---
+- hosts: all
+  roles:
+  - role: '{{ playbook_dir }}'
+  tasks:
+  - command: /usr/local/questdb/bin/questdb.sh status
+    register: questdb_test_output
+  - debug:
+      msg: '{{ questdb_test_output.stdout }}'

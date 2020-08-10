@@ -1,0 +1,9 @@
+---
+# vars file for questdb
+questdb_platform: '{{ questdb_os }}-{{ questdb_arch }}'
+questdb_name: questdb-{{ questdb_ver }}-rt-{{ questdb_platform }}
+questdb_tgz: '{{ questdb_name }}.tar.gz'
+questdb_url: '{{ questdb_mirror }}/{{ questdb_ver }}/{{ questdb_tgz }}'
+questdb_checksum: '{{ questdb_checksums[questdb_ver][questdb_platform] }}'
+questdb_install_dir: '{{ questdb_parent_install_dir }}/{{ questdb_name }}'
+questdb_link_dir: '{{ questdb_parent_install_dir }}/questdb'

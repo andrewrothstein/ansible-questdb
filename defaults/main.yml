@@ -1,0 +1,17 @@
+---
+# defaults file for questdb
+questdb_ver: 5.0.2
+questdb_os: linux
+questdb_arch: amd64
+questdb_mirror: https://github.com/questdb/questdb/releases/download
+questdb_parent_install_dir: /usr/local
+questdb_checksums:
+  '5.0.2':
+    # https://github.com/questdb/questdb/releases/download/5.0.2/questdb-5.0.2-rt-freebsd-amd64.tar.gz
+    freebsd-amd64: sha256:cba8942906d127559cb3fe99a9f8159dfe2778ba079c1807e29c1e6df5e3b876
+    # https://github.com/questdb/questdb/releases/download/5.0.2/questdb-5.0.2-rt-linux-amd64.tar.gz
+    linux-amd64: sha256:ce828001720733335e6d312c2f782f40d09942bfd65f3ace6cf1c74ff247b3da
+    # https://github.com/questdb/questdb/releases/download/5.0.2/questdb-5.0.2-rt-osx-amd64.tar.gz
+    osx-amd64: sha256:dac04448426b2a09e25f3263060c9c45124cc47d9ccc861e8ed30ecce9f304df
+    # https://github.com/questdb/questdb/releases/download/5.0.2/questdb-5.0.2-rt-windows-amd64.tar.gz
+    windows-amd64: sha256:2786c75709951a8f3e9b07f066acbd7aaca2cc4a33eb05affe01feca2a1ca85e
